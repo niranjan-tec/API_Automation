@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "userId",
+    "date",
+    "products",
+    "__v"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique cart identifier"
+    },
+    "userId": {
+      "type": "integer",
+      "description": "User identifier who owns the cart"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Cart creation or update date in ISO 8601 format"
+    },
+    "products": {
+      "type": "array",
+      "description": "List of products in the cart",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "productId",
+          "quantity"
+        ],
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "description": "Product identifier"
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "Quantity of the product",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "__v": {
+      "type": "integer",
+      "description": "Version key (used for internal/document versioning)"
+    }
+  }
+}

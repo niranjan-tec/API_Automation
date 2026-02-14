@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "price",
+    "description",
+    "category",
+    "image",
+    "rating"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique product identifier"
+    },
+    "title": {
+      "type": "string",
+      "description": "Product title/name"
+    },
+    "price": {
+      "type": "number",
+      "description": "Product price",
+      "minimum": 0
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category"
+    },
+    "image": {
+      "type": "string",
+      "format": "uri",
+      "description": "Product image URL"
+    },
+    "rating": {
+      "type": "object",
+      "required": [
+        "rate",
+        "count"
+      ],
+      "properties": {
+        "rate": {
+          "type": "number",
+          "description": "Average rating score",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "count": {
+          "type": "integer",
+          "description": "Number of ratings",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
