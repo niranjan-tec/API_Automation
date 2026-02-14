@@ -66,6 +66,7 @@ public class UserTest extends BaseClass {
 		.then()
 		  .statusCode(200)
 		  .body("size()", equalTo(Integer.parseInt(limit)))
+		  .body("[0].id", notNullValue())
 		  .log().all();
 			
 	}
