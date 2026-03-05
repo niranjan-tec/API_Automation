@@ -15,6 +15,16 @@
       </class> <!-- testcases.LoginTest -->
     </classes>
   </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" parallel="tests" name="Data Driven Test(failed)">
+    <classes>
+      <class name="testcases.ProductDataDrivenTest">
+        <methods>
+          <include name="testAddNewProduct" invocation-numbers="0 1 2 3 4"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.ProductDataDrivenTest -->
+    </classes>
+  </test> <!-- Data Driven Test(failed) -->
   <test thread-count="5" parallel="tests" name="User Tests(failed)">
     <classes>
       <class name="testcases.UserTest">
@@ -51,16 +61,6 @@
       </class> <!-- testcases.CartTest -->
     </classes>
   </test> <!-- Cart Tests(failed) -->
-  <test thread-count="5" parallel="tests" name="Data Driven Test(failed)">
-    <classes>
-      <class name="testcases.ProductDataDrivenTest">
-        <methods>
-          <include name="testAddNewProduct" invocation-numbers="0 1 2 3 4"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.ProductDataDrivenTest -->
-    </classes>
-  </test> <!-- Data Driven Test(failed) -->
   <test thread-count="5" parallel="tests" name="Product Tests(failed)">
     <classes>
       <class name="testcases.ProductDataDrivenTest">

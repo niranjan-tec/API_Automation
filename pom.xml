@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>RestAssuredAPIAutomation</groupId>
-  <artifactId>RestAssuredAPIAutomation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-    <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>RestAssuredAPIAutomation</groupId>
+	<artifactId>RestAssuredAPIAutomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
 		<pluginManagement>
 
 			<plugins>
@@ -33,18 +35,19 @@
 
 
 	<!-- Here you can change the versions in future -->
+	<!-- Latest stable dependency versions (2026) -->
 	<properties>
-		<rest-assured-version>5.5.0</rest-assured-version>
-		<testng-version>7.10.2</testng-version>
-		<json-path-version>5.5.0</json-path-version>
-		<xml-path-version>5.5.0</xml-path-version>
-		<json-schema-validator-version>5.5.0</json-schema-validator-version>
+		<rest-assured-version>5.5.7</rest-assured-version>
+		<testng-version>7.11.0</testng-version>
+		<json-path-version>5.5.7</json-path-version>
+		<xml-path-version>5.5.7</xml-path-version>
+		<json-schema-validator-version>5.5.7</json-schema-validator-version>
 		<json-version>20250107</json-version>
 		<gson-version>2.11.0</gson-version>
 		<scribejava-apis-version>8.3.3</scribejava-apis-version>
 		<javafaker-version>1.0.2</javafaker-version>
-		<jackson-databind-version>2.18.2</jackson-databind-version>
-		<allure-testng-version>2.29.0</allure-testng-version>
+		<jackson-databind-version>2.18.3</jackson-databind-version>
+		<allure-testng-version>2.29.1</allure-testng-version>
 		<extentreports-version>5.1.2</extentreports-version>
 	</properties>
 
@@ -123,15 +126,15 @@
 			<version>${allure-testng-version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 		</dependency>
-		
-		
+
+
 	</dependencies>
-  
+
 </project>
