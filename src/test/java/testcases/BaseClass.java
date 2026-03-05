@@ -29,6 +29,7 @@ ConfigReader configReader;
 		
 		configReader=new ConfigReader();
 		 // Setup filters for logging
+
 //	    FileOutputStream fos = new FileOutputStream(".\\logs\\test_logging.log");
 //	    PrintStream log = new PrintStream(fos, true);
 //	    
@@ -36,6 +37,15 @@ ConfigReader configReader;
 //	    responseLoggingFilter = new ResponseLoggingFilter(log);
 //	    
 //	    RestAssured.filters(requestLoggingFilter, responseLoggingFilter);
+
+	    // FileOutputStream fos = new FileOutputStream(".\\logs\\test_logging.log");
+	    // PrintStream log = new PrintStream(fos, true);
+	    
+	    // requestLoggingFilter = new RequestLoggingFilter(log);
+	    // responseLoggingFilter = new ResponseLoggingFilter(log);
+	    
+	    // RestAssured.filters(requestLoggingFilter, responseLoggingFilter);
+
 	}
 	
 	// Helper method to check if a list is sorted in descending order
